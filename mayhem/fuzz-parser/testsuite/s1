@@ -1,0 +1,1 @@
+sin(x)*cos(y) + a*z^2 - if(x>y, sqrt(abs(z)), log(2.0))

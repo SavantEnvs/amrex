@@ -1,0 +1,11 @@
+project: savantenvs/amrex
+target: fuzz-vismf-header
+
+cmds:
+  - cmd: /mayhem/fuzz_vismf_header
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-vismf-header/testsuite

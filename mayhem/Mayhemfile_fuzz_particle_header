@@ -1,0 +1,11 @@
+project: savantenvs/amrex
+target: fuzz-particle-header
+
+cmds:
+  - cmd: /mayhem/fuzz_particle_header
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-particle-header/testsuite
